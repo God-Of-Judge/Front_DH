@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="/resources/assets/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/resources/assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="/resources/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="/resources/assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="/resources/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/resources/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="/resources/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="/resources/assets/lib/owl.carousel/dist//resources/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/resources/assets/lib/owl.carousel/dist//resources/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="/resources/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="/resources/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Main stylesheet and color file-->
+    <link href="/resources/assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="/resources/assets/css/colors/default.css" rel="stylesheet">
+  </head>
+  <style>
+    #modal-wrap {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      margin: 0;
+      z-index: 1000;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    #modal.modal-overlay {
+      display: none;
+    }
+
+
+  </style>
+
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <th:block th:replace="fragment/head :: headFragment"></th:block>
+
+
+      <section class="home-section home-full-height bg-dark bg-gradient" id="home">
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-30 titan-title-size-1"><h3>블랙박스 사고영상을 활용한</h3></div>
+            <div class="font-alt mb-40 titan-title-size-4">AI 과실비율 판단 서비스</div>
+            <a class="section-scroll btn btn-border-w btn-round"><span onclick="modalOpen()">로그인</span></a>
+          </div>
+        </div>
+      </section>
+
+      <div id="modal-wrap">
+      <!--<section class="module">-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 mb-sm-40">
+              <h4 class="font-alt">Login</h4>
+              <hr class="divider-w mb-10">
+              <form class="form">
+                <div class="form-group">
+                  <input class="form-control" id="username" type="text" name="username" placeholder="Username"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="password" type="password" name="password" placeholder="Password"/>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-round btn-b"><sapn onClick="modalOpen()">Login</sapn></button>
+                </div>
+                <div class="form-group"><a href=""></a></div>
+              </form>
+            </div>
+      </div>
+
+
+        </div>
+    <!--   JavaScripts    -->
+      <script>
+        function modalOpen() {
+          document.querySelector('#modal-wrap').style.display = 'block';
+        }
+
+        // 모달 끄기
+        function modalClose() {
+          document.querySelector('#modal-wrap').style.display = 'none';
+        }
+
+        //버튼 클릭리스너 달기
+        document.querySelector('#modal_btn').addEventListener('click', modalOpen);
+        document.querySelector('#mental>p>button').addEventListener('click', modalClose);
+
+        function openCloseToc() {
+          if (document.getElementById('menu').style.display === 'block') {
+            document.getElementById('menu').style.display = 'none';
+          } else {
+            document.getElementById('menu').style.display = 'block';
+          }
+        }
+      </script>
+        <script>
+          const loremIpsum = document.getElementById("modal-wrap")
+          fetch("https://baconipsum.com/api/?type=all-meat&paras=200&format=html")
+                  .then(response => response.text())
+                  .then(result => loremIpsum.innerHTML = result)
+        </script>
+
+
+    <script src="/resources/assets/lib/jquery/dist/jquery.js"></script>
+    <script src="/resources/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/resources/assets/lib/wow/dist/wow.js"></script>
+    <script src="/resources/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="/resources/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="/resources/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="/resources/assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="/resources/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/resources/assets/lib/smoothscroll.js"></script>
+    <script src="/resources/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="/resources/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
+    <script src="/resources/assets/js/plugins.js"></script>
+    <script src="/resources/assets/js/main.js"></script>
+
+  </body>
+</html>
