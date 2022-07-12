@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<style>
+  h2 {
+    text-align: center;
+  }
+
+  .p {
+    text-align: center;
+    padding-top: 130px;
+  }
+
+</style>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+<div class="container">
+<th:block th:fragment="setLogin(login)">
+  <body>
+  <div class="member_login">
+    <form th:action="@{/auth/loginProc}" th:method="POST">
+      <div class="member_login_input">
+        <input type="text" name="username" placeholder="아이디" >
+      </div>
+
+      <div class="member_login_input">
+        <input type="password" name="password" placeholder="비밀번호">
+      </div>
+
+      <div class="member_login_btn">
+
+        <input type="submit" class="btn btn-secondary" id="btn-login" value="로그인">
+
+        <a>| 회원가입</a>
+      </div>
+
+      <div class="find_password">
+        <a href="/forgot-password">아이디 또는 비밀번호를 잊으셨나요?</a>
+      </div>
+
+      <div class="login_api">
+        <a href="/oauth2/authorization/google"><img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg"/></a>
+      </div>
+
+    </form>
+  </div>
+
+  </body>
+
+  <script src="/resources/assets/lib/jquery/dist/jquery.js"></script>
+  <script src="/resources/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/resources/assets/lib/wow/dist/wow.js"></script>
+  <script src="/resources/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+  <script src="/resources/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+  <script src="/resources/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+  <script src="/resources/assets/lib/flexslider/jquery.flexslider.js"></script>
+  <script src="/resources/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+  <!--<script src="/resources/assets/lib/smoothscroll.js"></script>-->
+  <script src="/resources/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  <script src="/resources/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+  <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
+  <script src="/resources/assets/js/plugins.js"></script>
+  <script src="/resources/assets/js/main.js"></script>
+</th:block>
+
+</html>

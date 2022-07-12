@@ -50,6 +50,9 @@ public class HomeTestAct3 {
     }
 
 
+    @RequestMapping("/buttons")
+    public void buttons(){
+    }
 
 
 
