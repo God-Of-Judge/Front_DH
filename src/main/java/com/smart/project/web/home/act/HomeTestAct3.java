@@ -64,6 +64,30 @@ public class HomeTestAct3 {
 
     }
 
+    // 관리자
 
+    @RequestMapping("/admin_head")
+    public String adminHead(){
+        return "fragment/admin_head";
+    }
+
+    @RequestMapping("admin/admin_main")
+    public String adminMain(){
+        return "admin/admin_main";
+    }
+
+    // 회원관리
+    @RequestMapping("admin/member_tables")
+    public String member_tables(){
+        return "admin/member_tables";
+    }
+
+    // 동영상관리
+    @RequestMapping("admin/video_tables")
+    public String video_tables(){
+        return "admin/video_tables";
+    }
+    
+    
 
 }
