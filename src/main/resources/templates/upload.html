@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="cssfile.css" media="screen and (min-width: 512px) and (max-width: 1024px)" rel="stylesheet">
+
     <link rel="manifest" href="/resources/assets/images/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/resources/assets/images/favicons/ms-icon-144x144.png">
@@ -43,6 +45,7 @@
         display: none;
         background-color: rgba(0, 0, 0, 0.4);
     }
+
     .modal_body {
         position: absolute;
         top: 53%;
@@ -58,19 +61,22 @@
         transform: translateX(-50%) translateY(-50%);
     }
 
-    .modal_body>h3 {
+    .modal_body > h3 {
         font-size: 35px;
         margin: 30px 30px 30px 30px;
 
     }
+
     .col-sm-6 {
         width: 100%;
         margin-left: 25%;
     }
+
     img {
         display: block;
         margin: auto;
     }
+
     input {
         text-align: right;
     }
@@ -85,23 +91,25 @@
         margin: 24px 136px -34px 0px;
         padding: 20px;
     }
-    form>div {
+
+    form > div {
         height: 30px;
         margin-top: 50px;
     }
 
-    form>div>input {
+    form > div > input {
         display: inline-block;
         width: 150px;
         height: 40px;
         margin: 0px 0px;
     }
-    form>div>span {
+
+    form > div > span {
         margin: 0px 20px 0px 12px;
         font-size: 20px;
     }
 
-    span>a{
+    span > a {
         background-color: black;
         padding: 4px 4px 4px;
         border: 1px solid black;
@@ -115,21 +123,39 @@
         margin-left: 17px;
     }
 
-    form>div {
+    form > div {
         height: 70px;
     }
+
     h3 {
         margin: -40px 0px 10px 5px;
         top: 20px;
         font-size: 30px;
 
     }
+
     button.btn.btn-b {
         background: #111111;
         color: #fff;
         font-size: 20px;
         border-radius: 5px;
     }
+
+    @media screen and (max-width:30px){
+        main{width: 1px;
+             height: 2px;}
+    }
+    @media screen and (min-width:40px) and (max-width:80px){
+        form{width: 10px;}
+    }
+    @media screen and (min-width:50px){
+        modal{width: 10px;}
+    }
+    @media screen and (min-width:50px){
+        module-title font-alt{width: 10px;}
+    }
+
+
 
 
 </style>
@@ -151,7 +177,8 @@
                                 <img src="/images/file.png"/><input id="input_p" type="file" name="file">
                             </pre>
 
-                            <div><span> 사고시점 입력 </span> <input class="timepicker"> <span> ~ </span> <input class="timepicker" type="text">
+                            <div><span> 사고시점 입력 </span> <input class="timepicker"> <span> ~ </span> <input
+                                    class="timepicker" type="text">
                                 <span>영상전체&nbsp;&nbsp;<input type="checkbox"></span>
                                 <span class="btn-open-popup" type="submit"><a style="color:white">업로드</a></span>
                             </div>
@@ -160,10 +187,13 @@
                         </form>
                         <div class="modal">
                             <div class="modal_body">
-                            <button type="button" class="close" data-dismiss="modal">×</button>
-                            <h3>공유하시겠습니까?</h3>
-                                <button class="btn btn-b btn-round"><a href="myList" style="color: white">결과확인</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <button class="btn btn-b btn-round"><a href="write" style="color: white">공유하기</a></button></div>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h3>공유하시겠습니까?</h3>
+                                <button class="btn btn-b btn-round"><a href="myList" style="color: white">결과확인</a>
+                                </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn btn-b btn-round"><a href="write" style="color: white">공유하기</a>
+                                </button>
+                            </div>
                         </div>
 
 
@@ -176,9 +206,6 @@
 
 
 </main>
-
-
-
 
 
 <script>
@@ -198,11 +225,10 @@
 </script>
 
 
-
 <script>
     $(document).ready(function () {
         $('input.timepicker').timepicker({
-            step:2,
+            step: 2,
             showSecond: true,
             timeFormat: 'HH:mm:ss',
             /*interval: 0.1,*/

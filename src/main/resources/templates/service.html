@@ -1,359 +1,152 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/resources/assets/images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/resources/assets/images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/resources/assets/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <!--  Stylesheets    -->
-    <!-- Default stylesheets-->
-    <link href="/resources/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Template specific stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="/resources/assets/lib/animate.css/animate.css" rel="stylesheet">
-    <link href="/resources/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/resources/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
-    <link href="/resources/assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="/resources/assets/lib/owl.carousel/dist//resources/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/resources/assets/lib/owl.carousel/dist//resources/assets/owl.theme.default.min.css" rel="stylesheet">
-    <link href="/resources/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-    <link href="/resources/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
-    <!-- Main stylesheet and color file-->
-    <link href="/resources/assets/css/style.css" rel="stylesheet">
-    <link id="color-scheme" href="/resources/assets/css/colors/default.css" rel="stylesheet">
-  </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-    <main>
-      <div class="page-loader">
-        <div class="loader">Loading...</div>
-      </div>
-      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Titan</a>
+  <!-- Default stylesheets-->
+  <link href="/resources/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="/resources/assets/lib/animate.css/animate.css" rel="stylesheet">
+  <link href="/resources/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/resources/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+  <link href="/resources/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+  <link href="/resources/assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/resources/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="/resources/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+  <link href="/resources/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Main stylesheet and color file-->
+  <link href="/resources/assets/css/style.css" rel="stylesheet">
+  <link id="color-scheme" href="/resources/assets/css/colors/default.css" rel="stylesheet">
+
+  <!-- 모달 라이브러리 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+  body,.main{
+    padding-right: 0 !important;
+  }
+  .modal-open { padding-right: 0px !important; }
+  .modal { padding-right: 0px !important; }
+
+  img{
+    width: 50%;
+  }
+
+  a{
+    font-family: 'SEBANG_Gothic_Regular',serif;
+  }
+  a:hover { text-decoration:none !important }
+</style>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+<th:block th:replace="fragment/head :: headFragment"></th:block>
+<main class="main">
+  <section class="module">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="row">
+
+            <section class="module-medium" id="contact">
+              <h1></h1>
+
+            </section>
           </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
-                <ul class="dropdown-menu">
-                  <li><a href="index_mp_fullscreen_video_background.html">Default</a></li>
-                  <li><a href="main.html">One Page</a></li>
-                  <li><a href="index_agency.html">Agency</a></li>
-                  <li><a href="index_portfolio.html">Portfolio</a></li>
-                  <li><a href="index_restaurant.html">Restaurant</a></li>
-                  <li><a href="index_finance.html">Finance</a></li>
-                  <li><a href="index_landing.html">Landing Page</a></li>
-                  <li><a href="index_photography.html">Photography</a></li>
-                  <li><a href="index_shop.html">Shop</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Headers</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Static Image Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_static.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_static.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Flexslider Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_flexslider.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_flexslider.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Video Background Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_video_background.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_video_background.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Text Rotator Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_text_rotator.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_text_rotator.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gradient Overlay Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_gradient_overlay.html">Fulscreen</a></li>
-                      <li><a href="index.html">Classic</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="about1.html">About 1</a></li>
-                      <li><a href="about2.html">About 2</a></li>
-                      <li><a href="about3.html">About 3</a></li>
-                      <li><a href="about4.html">About 4</a></li>
-                      <li><a href="about5.html">About 5</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="service1.html">Service 1</a></li>
-                      <li><a href="service2.html">Service 2</a></li>
-                      <li><a href="service.html">Service 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pricing</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="pricing1.html">Pricing 1</a></li>
-                      <li><a href="pricing2.html">Pricing 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gallery</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="gallery_col_2.html">2 Columns</a></li>
-                      <li><a href="gallery_col_3.html">3 Columns</a></li>
-                      <li><a href="gallery_col_4.html">4 Columns</a></li>
-                      <li><a href="gallery_col_6.html">6 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Contact</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="contact1.html">Contact 1</a></li>
-                      <li><a href="contact2.html">Contact 2</a></li>
-                      <li><a href="contact3.html">Contact 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Restaurant menu</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="restaurant_menu1.html">Menu 2 Columns</a></li>
-                      <li><a href="restaurant_menu2.html">Menu 3 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="login.html">Login / Register</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="404.html">Page 404</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Portfolio</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_boxed_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_boxed_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_boxed_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed - Gutter</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_boxed_gutter_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_boxed_gutter_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_boxed_gutter_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_full_width_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_full_width_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_full_width_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width - Gutter</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_full_width_gutter_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_full_width_gutter_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_full_width_gutter_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_masonry_boxed_col_2.html">2 Columns</a></li>
-                          <li><a href="portfolio_masonry_boxed_col_3.html">3 Columns</a></li>
-                          <li><a href="portfolio_masonry_boxed_col_4.html">4 Columns</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_masonry_full_width_col_2.html">2 Columns</a></li>
-                          <li><a href="portfolio_masonry_full_width_col_3.html">3 Columns</a></li>
-                          <li><a href="portfolio_masonry_full_width_col_4.html">4 Columns</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Hover Style</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_hover_black.html">Black</a></li>
-                      <li><a href="portfolio_hover_gradient.html">Gradient</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Image</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_image1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_image2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Slider</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_slider1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_slider2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Video</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_video1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_video2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Standard</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_standard_left_sidebar.html">Left Sidebar</a></li>
-                      <li><a href="blog_standard_right_sidebar.html">Right Sidebar</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Grid</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_grid_col_2.html">2 Columns</a></li>
-                      <li><a href="blog_grid_col_3.html">3 Columns</a></li>
-                      <li><a href="community.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_grid_masonry_col_2.html">2 Columns</a></li>
-                      <li><a href="blog_grid_masonry_col_3.html">3 Columns</a></li>
-                      <li><a href="blog_grid_masonry_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_single_left_sidebar.html">Left Sidebar</a></li>
-                      <li><a href="blog_single_right_sidebar.html">Right Sidebar</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Features</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="alerts-and-wells.html"><i class="fa fa-bolt"></i> Alerts and Wells</a></li>
-                  <li><a href="buttons.html"><i class="fa fa-link fa-sm"></i> Buttons</a></li>
-                  <li><a href="tabs_and_accordions.html"><i class="fa fa-tasks"></i> Tabs &amp; Accordions</a></li>
-                  <li><a href="content_box.html"><i class="fa fa-list-alt"></i> Contents Box</a></li>
-                  <li><a href="forms.html"><i class="fa fa-check-square-o"></i> Forms</a></li>
-                  <li><a href="icons.html"><i class="fa fa-star"></i> Icons</a></li>
-                  <li><a href="progress-bars.html"><i class="fa fa-server"></i> Progress Bars</a></li>
-                  <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Product</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="shop_product_col_3.html">3 columns</a></li>
-                      <li><a href="shop_product_col_4.html">4 columns</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="shop_single_product.html">Single Product</a></li>
-                  <li><a href="shop_checkout.html">Checkout</a></li>
-                </ul>
-              </li>
+          <h2  class="Services" style="text-align: center; color: black;letter-spacing: 7px; font-size: 40px ">OUR SERVICES</h2>
+          <br>
 
-              <li class="dropdown"><a class="dropdown-toggle" href="documentation.html" data-toggle="dropdown">Documentation</a>
-                <ul class="dropdown-menu">
-                  <li><a href="documentation.html#contact">Contact Form</a></li>
-                  <li><a href="documentation.html#reservation">Reservation Form</a></li>
-                  <li><a href="documentation.html#mailchimp">Mailchimp</a></li>
-                  <li><a href="documentation.html#gmap">Google Map</a></li>
-                  <li><a href="documentation.html#plugin">Plugins</a></li>
-                  <li><a href="documentation.html#changelog">Changelog</a></li>
-                </ul>
-              </li>
-            </ul>
+          <hr class="divider-w pt-20">
+          <div class="row">
+            <div class="module-subtitle" style="font-size: 30px"><br><a>블랙박스 영상기반 교통사고 과실비율 AI 판단 서비스</a><p></p>
+              <p><a>신호등과 차선 등의 객체인식을 통해 사고상황을 면밀히 분석하고, 과실비율을 알려드립니다.</a></p> </div>
           </div>
         </div>
-      </nav>
-      <main class="main">
-        <section class="module">
-          <div class="container">
+        <hr class="divider-w pt-20" >
+        <h1>서비스과정</h1>
+        <br>
+        <div class="row multi-columns-row"  >
+          <div class="col-md-4 col-sm-6 col-xs-8" style="float: left"><img src="/resources/assets/images/view.png"><h2 style="margin-left: 20px">동영상업로드</h2><img src="/resources/assets/images/arrow.png" style="width: 100px;float: right;margin-top: -150px"></div>
+          <div class="col-md-4 col-sm-6 col-xs-8" ><img src="/resources/assets/images/qi.png"><h2 style="margin-left: 50px">AI모델</h2>
+            <img src="/resources/assets/images/arrow.png" style="width: 100px;float: right;margin-top: -150px"></div>
+          <div class="col-md-4 col-sm-6 col-xs-8"><img src="/resources/assets/images/dk.png"><h2 style="margin-left: 20px">과실비율 판단</h2></div>
+        </div>
+      </div>
+      <section class="module" >
+        <br>
+        <hr class="divider-w pt-20" >
+        <div class="container">
+          <section class="module" id="about">
             <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Services</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
-              </div>
+              <h1>판별의 신은</h1>
+              <br>
             </div>
-            <hr class="divider-w pt-20">
-            <div class="row mb-60">
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-strategy"></span></div>
-                  <h3 class="alt-features-title font-alt">Branding</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
-                  <h3 class="alt-features-title font-alt">Development</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
+            <div class="module">
+              <div>
+                <img src="/resources/assets/images/pngegg.png" style="width: 80px" />
+                <a style="font-family: 'SEBANG_Gothic_Regular',serif; font-size: 30px">&nbsp;&nbsp;편리성</a>
+                <h3>손쉽게 과실비율을 확인할 수 있는 사용자 중심의 편의서비스 제공</h3>
               </div>
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-target"></span></div>
-                  <h3 class="alt-features-title font-alt">Marketing</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-tools"></span></div>
-                  <h3 class="alt-features-title font-alt">Design</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
+              <div style="margin-left: 650px; margin-top: 50px">
+                <img src="/resources/assets/images/finger2.png" style="width: 80px" />
+                <a style="font-family: 'SEBANG_Gothic_Regular',serif; font-size: 30px;">&nbsp;&nbsp;시간효율성</a>
+                <h3>5분 이내로 AI가 판단하는 과실비율 확인가능</h3>
+                <br>
               </div>
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-camera"></span></div>
-                  <h3 class="alt-features-title font-alt">Photography</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-mobile"></span></div>
-                  <h3 class="alt-features-title font-alt">Mobile</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
+              <div>
+                <img src="/resources/assets/images/finger3.png" style="width: 80px" />
+                <a style="font-family: 'SEBANG_Gothic_Regular',serif; font-size: 30px">&nbsp;&nbsp;공정성</a>
+                <h3>AI 자동판독으로 과실비율 판정의 투명성</h3>
               </div>
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
-                  <h3 class="alt-features-title font-alt">Music</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-basket"></span></div>
-                  <h3 class="alt-features-title font-alt">Shop</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
 
-    <!--   JavaScripts   -->
-    <script src="/resources/assets/lib/jquery/dist/jquery.js"></script>
-    <script src="/resources/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/resources/assets/lib/wow/dist/wow.js"></script>
-    <script src="/resources/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <script src="/resources/assets/lib/isotope/dist/isotope.pkgd.js"></script>
-    <script src="/resources/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="/resources/assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="/resources/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="/resources/assets/lib/smoothscroll.js"></script>
-    <script src="/resources/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="/resources/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-    <script src="/resources/assets/js/plugins.js"></script>
-    <script src="/resources/assets/js/main.js"></script>
-  </body>
+                  <!--신뢰성 추가 이상하면 삭제-->
+<!--              <div>-->
+<!--                <img src="/resources/assets/images/finger3.png" style="width: 80px" />-->
+<!--                <a style="font-family: 'SEBANG_Gothic_Regular',serif; font-size: 30px">&nbsp;&nbsp;신뢰성</a>-->
+<!--                <h3>판례 근거제시를 통한 사용자 신뢰도 향상</h3>-->
+<!--              </div>-->
+
+            </div>
+          </section>
+        </div>
+      </section>
+
+    </div>
+</main>
+
+<!--   JavaScripts   -->
+<script src="/resources/assets/lib/jquery/dist/jquery.js"></script>
+<script src="/resources/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/resources/assets/lib/wow/dist/wow.js"></script>
+<script src="/resources/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+<script src="/resources/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+<script src="/resources/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+<script src="/resources/assets/lib/flexslider/jquery.flexslider.js"></script>
+<script src="/resources/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="/resources/assets/lib/smoothscroll.js"></script>
+<script src="/resources/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="/resources/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+<script src="/resources/assets/js/plugins.js"></script>
+<script src="/resources/assets/js/main.js"></script>
+</body>
 </html>
