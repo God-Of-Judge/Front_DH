@@ -27,13 +27,13 @@
     .modal_body {
         position: absolute;
         top: 53%;
-        left: 50%;
-        width: 800px;
-        height: 450px;
-        line-height: 100px;
+        left: 54%;
+        width: 700px;
+        height: 436px;
+        line-height: 110px;
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 0px;
+        background-color: rgba(255, 255, 255);
+        border-radius: 20px;
         box-shadow: 0 2px 3px 0 rgb(34 36 38 / 15%);
         transform: translateX(-50%) translateY(-50%);
     }
@@ -57,6 +57,12 @@
         opacity: 1;
     }
 
+    .modal_body>iframe {
+        width: 650px;
+        height: 300px;
+        margin: 50px 0px 50px 0px;
+    }
+
     button.close:hover {
         background-color: red;
         opacity: 0.9
@@ -66,11 +72,10 @@
         margin-left: 9px;
         font-size: 20px;
         position: absolute;
+        top: 18px;
+        margin-right: 24px;
     }
 
-    .card.mb-4 {
-        padding: 0px 20px 0px 20px;
-    }
 
     tbody {
         font-size: 13px;
@@ -101,8 +106,14 @@
 
     .card-header {
         font-weight: bold;
+        font-size: 20px;
     }
 
+    .modal_body>h2 {
+        font-size: 30px;
+        padding: 18px 0px 0px 0px;
+
+    }
 </style>
 <body class="sb-nav-fixed">
 <!--        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -229,7 +240,7 @@
                         <td>11분</td>
                         <td>61MB</td>
                         <td>X</td>
-                        <td>22-07-01 AM 07:02 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-01 AM 07:02 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Garrett Winters</td>
@@ -237,7 +248,7 @@
                         <td>12분</td>
                         <td>63MB</td>
                         <td>X</td>
-                        <td>22-07-01 AM 09:15 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-01 AM 09:15 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Ashton Cox</td>
@@ -245,7 +256,7 @@
                         <td>13분</td>
                         <td>66MB</td>
                         <td>X</td>
-                        <td>22-07-02 PM 03:16 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 PM 03:16 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Cedric Kelly</td>
@@ -253,7 +264,7 @@
                         <td>3분</td>
                         <td>22MB</td>
                         <td>X</td>
-                        <td>22-07-03 PM 01:43 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-03 PM 01:43 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Airi Satou</td>
@@ -269,7 +280,7 @@
                         <td>11분</td>
                         <td>61MB</td>
                         <td>X</td>
-                        <td>22-07-04 AM 02:48 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-04 AM 02:48 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Herrod Chandler</td>
@@ -277,7 +288,7 @@
                         <td>10분</td>
                         <td>59MB</td>
                         <td>X</td>
-                        <td>22-07-01 PM 02:57 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-01 PM 02:57 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Rhona Davidson</td>
@@ -301,7 +312,7 @@
                         <td>2분</td>
                         <td>23MB</td>
                         <td>X</td>
-                        <td>22-07-08 PM 06:42 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-08 PM 06:42 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Jena Gaines</td>
@@ -309,7 +320,7 @@
                         <td>3분</td>
                         <td>30MB</td>
                         <td>X</td>
-                        <td>22-07-02 PM 07:19 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 PM 07:19 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Quinn Flynn</td>
@@ -317,7 +328,7 @@
                         <td>2분</td>
                         <td>22MB</td>
                         <td>X</td>
-                        <td>22-07-02 AM 01:18 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 AM 01:18 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Charde Marshall</td>
@@ -325,7 +336,7 @@
                         <td>3분</td>
                         <td>36MB</td>
                         <td>X</td>
-                        <td>22-07-02 AM 02:23 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 AM 02:23 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Haley Kennedy</td>
@@ -333,7 +344,7 @@
                         <td>5분</td>
                         <td>43MB</td>
                         <td>X</td>
-                        <td>22-07-02 PM 05:36 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 PM 05:36 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Tatyana Fitzpatrick</td>
@@ -365,7 +376,7 @@
                         <td>8분</td>
                         <td>59MB</td>
                         <td>X</td>
-                        <td>22-07-04 PM 04:16 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-04 PM 04:16 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Bradley Greer</td>
@@ -373,7 +384,7 @@
                         <td>4분</td>
                         <td>41MB</td>
                         <td>X</td>
-                        <td>22-07-03 PM 00:14 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-03 PM 00:14 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Dai Rios</td>
@@ -381,7 +392,7 @@
                         <td>3분</td>
                         <td>35MB</td>
                         <td>X</td>
-                        <td>22-07-02 PM 01:11 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 PM 01:11 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Jenette Caldwell</td>
@@ -397,7 +408,7 @@
                         <td>4분</td>
                         <td>40MB</td>
                         <td>X</td>
-                        <td>22-07-02 PM 07:30 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 PM 07:30 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Caesar Vance</td>
@@ -421,7 +432,7 @@
                         <td>4분</td>
                         <td>47MB</td>
                         <td>X</td>
-                        <td>22-07-04 AM 05:19 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-04 AM 05:19 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Gavin Joyce</td>
@@ -437,7 +448,7 @@
                         <td>2분</td>
                         <td>28MB</td>
                         <td>X</td>
-                        <td>22-07-03 AM 04:11 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-03 AM 04:11 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Brenden Wagner</td>
@@ -445,7 +456,7 @@
                         <td>2분</td>
                         <td>28MB</td>
                         <td>X</td>
-                        <td>22-07-01 AM 07:19 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-01 AM 07:19 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Fiona Green</td>
@@ -453,7 +464,7 @@
                         <td>3분</td>
                         <td>48MB</td>
                         <td>X</td>
-                        <td>22-07-06 AM 00:14 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-06 AM 00:14 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Shou Itou</td>
@@ -461,7 +472,7 @@
                         <td>2분</td>
                         <td>20MB</td>
                         <td>X</td>
-                        <td>22-07-03 AM 01:26 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-03 AM 01:26 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Michelle House</td>
@@ -493,8 +504,7 @@
                         <td>2분</td>
                         <td>22MB</td>
                         <td>X</td>
-                        <
-                        <td>22-07-04 PM 06:34 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-04 PM 06:34 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Martena Mccray</td>
@@ -502,7 +512,7 @@
                         <td>3분</td>
                         <td>46MB</td>
                         <td>X</td>
-                        <td>22-07-01 AM 02:12 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-01 AM 02:12 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Unity Butler</td>
@@ -510,7 +520,7 @@
                         <td>3분</td>
                         <td>47MB</td>
                         <td>X</td>
-                        <td>22-07-06 AM 08:40 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-06 AM 08:40 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Howard Hatfield</td>
@@ -518,7 +528,7 @@
                         <td>5분</td>
                         <td>51MB</td>
                         <td>X</td>
-                        <td>22-07-04 AM 07:39 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-04 AM 07:39 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Hope Fuentes</td>
@@ -526,7 +536,7 @@
                         <td>3분</td>
                         <td>41MB</td>
                         <td>X</td>
-                        <td>22-07-05 PM 06:42 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-05 PM 06:42 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Vivian Harrell</td>
@@ -558,7 +568,7 @@
                         <td>7분</td>
                         <td>64MB</td>
                         <td>X</td>
-                        <td>22-07-02 AM 03:12 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 AM 03:12 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Bruno Nash</td>
@@ -566,7 +576,7 @@
                         <td>3분</td>
                         <td>38MB</td>
                         <td>X</td>
-                        <td>22-07-06 AM 04:53 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-06 AM 04:53 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Sakura Yamamoto</td>
@@ -574,7 +584,7 @@
                         <td>2분</td>
                         <td>37MB</td>
                         <td>X</td>
-                        <td>22-07-05 AM 02:51 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-05 AM 02:51 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Thor Walton</td>
@@ -582,7 +592,7 @@
                         <td>10분</td>
                         <td>61MB</td>
                         <td>X</td>
-                        <td>22-07-02 AM 07:55 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 AM 07:55 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Finn Camacho</td>
@@ -590,7 +600,7 @@
                         <td>3분</td>
                         <td>47MB</td>
                         <td>X</td>
-                        <td>22-07-03 PM 02:53 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-03 PM 02:53 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Serge Baldwin</td>
@@ -606,7 +616,7 @@
                         <td>9분</td>
                         <td>63MB</td>
                         <td>X</td>
-                        <td>22-07-02 PM 03:23 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 PM 03:23 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Zorita Serrano</td>
@@ -622,7 +632,7 @@
                         <td>4분</td>
                         <td>43MB</td>
                         <td>X</td>
-                        <td>22-07-02 AM 06:51 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 AM 06:51 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Cara Stevens</td>
@@ -630,7 +640,7 @@
                         <td>4분</td>
                         <td>46MB</td>
                         <td>X</td>
-                        <td>22-07-07 AM 02:55 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-07 AM 02:55 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Hermione Butler</td>
@@ -638,7 +648,7 @@
                         <td>4분</td>
                         <td>47MB</td>
                         <td>X</td>
-                        <td>22-07-02 PM 02:16 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 PM 02:16 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Lael Greer</td>
@@ -662,7 +672,7 @@
                         <td>8분</td>
                         <td>51MB</td>
                         <td>X</td>
-                        <td>22-07-02 AM 02:25 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-02 AM 02:25 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Michael Bruce</td>
@@ -670,7 +680,7 @@
                         <td>2분</td>
                         <td>29MB</td>
                         <td>X</td>
-                        <td>22-07-08 PM 02:32 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-08 PM 02:32 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     <tr>
                         <td>Donna Snider</td>
@@ -678,7 +688,7 @@
                         <td>2분</td>
                         <td>27MB</td>
                         <td>X</td>
-                        <td>22-07-07 PM 09:49 &ensp;<input type="checkbox" class="cb"</td>
+                        <td>22-07-07 PM 09:49 &ensp;<input type="checkbox" class="cb"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -688,8 +698,9 @@
 </main>
 <div class="modal">
     <div class="modal_body">
+        <h2>억울합니다</h2>
         <button type="button" class="close" onclick="click()" data-dismiss="modal">×</button>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/J9NKlnSW754" title="YouTube video player"
+        <iframe src="https://www.youtube.com/embed/J9NKlnSW754" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
